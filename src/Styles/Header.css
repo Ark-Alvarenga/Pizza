@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    background-color: black;
+    color: rgb(255, 180, 50);
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 7px;
+}
+.btn {
+    max-height: 50px;
+    border-radius: 25%;
+    max-width: 100px;
+    min-height: 50px;
+    min-width: 120px;
+    margin: 20px;
+    background-color: rgb(255, 180, 50);
+    border: 2px solid black;
+    
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+    transition: all ease 0.3s;
+    transform: scale(1.2);
+    
+}
+
+.red {
+    background-color: red;
+}
+
+.red:hover{
+    
+    background-color: red;
+}
+
+@media screen and (max-width: 425px) {
+    .header {justify-content: space-around; align-items: center;}
+    .header > h2,h4 {font-size: 15px; padding: 10px}
+    .btn { max-width: 50%; min-width: 45px;}
+    
+    }
